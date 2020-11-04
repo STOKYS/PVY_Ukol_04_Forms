@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(200, 200, 200);
+}
+
+* {
+    font-family: Roboto;
+}
+
+img {
+    margin: 64px;
+    width: 256px;
+    height: 256px;
+}
+
+.col-lg-3>img {
+    margin: auto;
+    width: 128px;
+    height: 128px;
+}
+
+.col-lg-3 {
+    background-color: rgb(200, 200, 200);
+    border: 1px solid rgb(55, 55, 55);
+    height: 350px;
+    margin: 5px;
+    margin-bottom: 54px;
+    border-radius: 15px;
+}
+
+.col-lg-3>h2 {
+    padding-top: 15px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.col-lg-3>hr {
+    border-top: 1px dashed black;
+}
+
+.col-lg-3>button {
+    background-color: rgb(200, 200, 200);
+    border: 1px solid rgb(55, 55, 55);
+    width: 50%;
+    margin-left: 25%;
+}
+
+#select-button>button {
+    background-color: rgb(200, 200, 200);
+    border: 1px solid grey;
+    padding: 20px;
+    font-size: large;
+    border-radius: 20px 10px 0px 0px;
+    box-shadow: 10px 10px 5px grey;
+    outline: none;
+    transition: width 1s ease, background-color 1s ease;
+    width: 180px;
+}
+
+#select-button>button:disabled {
+    background-color: rgb(55, 55, 55);
+    border-bottom-color: rgb(55, 55, 55);
+    color: white;
+    width: 300px;
+}
+
+
+.selection {
+    padding-top: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    height: 599px;
+    background-color: rgb(55, 55, 55);
+}
