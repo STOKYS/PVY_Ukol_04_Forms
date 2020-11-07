@@ -15,250 +15,299 @@
     <main>
         <div class="container-fluid">
             <div class="row justify-content-around">
-                <div class="col-lg-4">
-                    <img src="img/shapes/default.png" id="preview">
+                <div class="col-lg-4" id="1">
+                    <img src="img/default.png" id="preview">
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2" style="margin-top: 35px;" id="2">
                     <div class="forms">
                         <div id="forms-2d1">
                             <div class="form-group">
-                                <div id="2dshape-input-1">
+                                <div id="2-01">
                                     <label for="">Side a</label>
-                                    <input type="number" name="" id="2d-a" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="2-01-01" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Side b</label>
-                                    <input type="number" name="" id="2d-b" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="2-01-02" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Side c</label>
-                                    <input type="number" name="" id="2d-c" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="2-01-03" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Side d</label>
-                                    <input type="number" name="" id="2d-d" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="2-01-04" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                 </div>
-                                <div id="3dshape-input-1" style="display: none;">
+                                <div id="2-02" style="display: none;">
                                     <label for="">Side a</label>
-                                    <input type="number" name="" id="3d-a" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="2-02-01" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Side b</label>
-                                    <input type="number" name="" id="3d-b" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="2-02-02" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Side c</label>
-                                    <input type="number" name="" id="3d-c" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="2-02-03" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Number of sides n</label>
-                                    <input type="number" name="" id="3d-n" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="2-02-04" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                 </div>
-                                <div id="units-input-1" style="display: none;">
-                                    <label for="">Height h</label>
-                                    <input type="number" name="" id="-h" class="form-control" placeholder="0" disabled>
-                                    <label for="">Radius r<sub>a</sub></label>
-                                    <input type="number" name="" id="-ra" class="form-control" placeholder="0" disabled>
-                                    <label for="">Radius r<sub>b</sub></label>
-                                    <input type="number" name="" id="-rb" class="form-control" placeholder="0" disabled>
-                                    <label for="">Number of sides n (Minimum of 5)</label>
-                                    <input type="number" name="" id="-n" class="form-control" placeholder="0" disabled>
-                                </div>
+                                <!--<div id="2-03" style="display: none;">
+                                    <label for="">Your Unit</label>
+                                    <select class="form-control" name="" id="">
+                                        <option id="1option01" selected>Millimeter (mm)</option>
+                                        <option id="1option02">Centimeter (cm)</option>
+                                        <option id="1option03">Decimeter (dm)</option>
+                                        <option id="1option04">Meter (m)</option>
+                                        <option id="1option05">Kilometer (km)</option>
+                                        <option id="1option06">Inch (in)</option>
+                                        <option id="1option07">Foot (ft)</option>
+                                        <option id="1option08">Yard (yd)</option>
+                                        <option id="1option09">Mile (mi)</option>
+                                    </select>
+                                    <label for="">Input</label>
+                                    <input type="number" name="" id="units-input" class="form-control" placeholder="0"
+                                        min="0">
+                                </div>-->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2" style="margin-top: 35px;" id="3">
                     <div class="forms">
                         <div id="forms-2d2">
                             <div class="form-group">
-                                <div id="2dshape-input-2">
+                                <div id="3-01">
                                     <label for="">Height h</label>
-                                    <input type="number" name="" id="2d-h" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="3-01-01" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Radius r<sub>a</sub></label>
-                                    <input type="number" name="" id="2d-ra" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="3-01-02" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Radius r<sub>b</sub></label>
-                                    <input type="number" name="" id="2d-rb" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="3-01-03" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Number of sides n (Minimum of 5)</label>
-                                    <input type="number" name="" id="2d-n" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="3-01-04" class="form-control" placeholder="5"
+                                        min="5" disabled>
                                 </div>
-                                <div id="3dshape-input-2" style="display: none;">
+                                <div id="3-02" style="display: none;">
                                     <label for="">Minor radius r</label>
-                                    <input type="number" name="" id="3d-mir" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="3-02-01" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Major radius R</label>
-                                    <input type="number" name="" id="3d-mar" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="3-02-02" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Height h</label>
-                                    <input type="number" name="" id="3d-h" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="3-02-03" class="form-control" placeholder="0"
+                                        min="0" disabled>
                                     <label for="">Inner Height h<sub>a</sub></label>
-                                    <input type="number" name="" id="3d-ha" class="form-control" placeholder="0"
-                                        disabled>
+                                    <input type="number" name="" id="3-02-04" class="form-control" placeholder="0"
+                                        min="0" disabled>
 
                                 </div>
-                                <div id="units-input-2" style="display: none;">
-                                    <label for="">Height h</label>
-                                    <input type="number" name="" id="-h" class="form-control" placeholder="0" disabled>
-                                    <label for="">Radius r<sub>a</sub></label>
-                                    <input type="number" name="" id="-ra" class="form-control" placeholder="0" disabled>
-                                    <label for="">Radius r<sub>b</sub></label>
-                                    <input type="number" name="" id="-rb" class="form-control" placeholder="0" disabled>
-                                    <label for="">Number of sides n (Minimum of 5)</label>
-                                    <input type="number" name="" id="-n" class="form-control" placeholder="0" disabled>
-                                </div>
+                                <!--<div id="units-input-2" style="display: none;">
+                                    <label for="">Converted Unit</label>
+                                    <select class="form-control" name="" id="">
+                                        <option id="2option01">Millimeter (mm)</option>
+                                        <option id="2option02">Centimeter (cm)</option>
+                                        <option id="2option03">Decimeter (dm)</option>
+                                        <option id="2option04">Meter (m)</option>
+                                        <option id="2option05">Kilometer (km)</option>
+                                        <option id="2option06" selected>Inch (in)</option>
+                                        <option id="2option07">Foot (ft)</option>
+                                        <option id="2option08">Yard (yd)</option>
+                                        <option id="2option09">Mile (mi)</option>
+                                    </select>
+                                    <label>Submit button</label>
+                                    <button type="button" class="form-control">Submit</button>
+                                </div>-->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" style="margin-top: 120px" id="4">
                     <div class="results">
-                        <p id="circ">Circumference: x</p>
-                        <p id="area">Area: x</p>
-                        <p id="surf">Surface: x</p>
-                        <p id="volu">Volume: x</p>
+                        <div id="4-01">
+                            <p id="4-01-01">Circumference: x</p>
+                            <p id="4-01-02">Area: x</p>
+                        </div>
+                        <div id="4-02" style="display: none;">
+                            <p id="4-02-01">Surface: x</p>
+                            <p id="4-02-02">Volume: x</p>
+                        </div>
+                        <!--<p id="units-result" style="display: none;">Result: x</p>-->
                     </div>
                 </div>
             </div>
         </div>
         <nav id="select-button">
-            <button disabled id="2dshape">2D shapes</button>
-            <button id="3dshape">3D shapes</button>
-            <button id="units">Units Converter</button>
+            <button disabled id="01-button">2D shapes</button>
+            <button id="02-button">3D shapes</button>
+            <button id="03-button">BMI calculator</button>
+            <button>Units Converter</button>
+            <button>Clocks</button>
+            <button>Units Converter</button>
+
         </nav>
         <div class="selection">
-            <div class="container-fluid" id="2dshape-selected">
+            <div class="container-fluid" id="01">
                 <div class="row justify-content-around">
-                    <div class="col-sm-12 col-md-6 col-lg-3 2d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 01">
                         <h2>Square</h2>
                         <hr>
                         <p>Calculate circuit and area of Square</p>
-                        <img src="img/shapes/square.png">
+                        <img src="img/shapes/01-01.png">
                         <hr>
-                        <button id="square">Try this</button>
+                        <button id="01-01">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 2d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 01">
                         <h2>Rectangle</h2>
                         <hr>
                         <p>Calculate circuit and area of Rectangle</p>
-                        <img src="img/shapes/rectangle.png">
+                        <img src="img/shapes/01-02.png">
                         <hr>
-                        <button id="rectangle">Try this</button>
+                        <button id="01-02">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 2d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 01">
                         <h2>Triangle</h2>
                         <hr>
                         <p>Calculate circuit and area of Triangle</p>
-                        <img src="img/shapes/triangle.png">
+                        <img src="img/shapes/01-03.png">
                         <hr>
-                        <button id="triangle">Try this</button>
+                        <button id="01-03">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 2d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 01">
                         <h2>Circle</h2>
                         <hr>
                         <p>Calculate circuit and area of Circle</p>
-                        <img src="img/shapes/circle.png">
+                        <img src="img/shapes/01-04.png">
                         <hr>
-                        <button id="circle">Try this</button>
+                        <button id="01-04">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 2d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 01">
                         <h2>Elipse</h2>
                         <hr>
                         <p>Calculate circuit and area of Elipse</p>
-                        <img src="img/shapes/elipse.png">
+                        <img src="img/shapes/01-05.png">
                         <hr>
-                        <button id="elipse">Try this</button>
+                        <button id="01-05">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 2d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 01">
                         <h2>Polygon</h2>
                         <hr>
                         <p>Calculate circuit and area of Polygon</p>
-                        <img src="img/shapes/polygon.png">
+                        <img src="img/shapes/01-06.png">
                         <hr>
-                        <button id="polygon">Try this</button>
+                        <button id="01-06">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 2d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 01">
                         <h2>Parallelogram</h2>
                         <hr>
                         <p>Calculate circuit and area of Parallelogram</p>
-                        <img src="img/shapes/parallelogram.png">
+                        <img src="img/shapes/01-07.png">
                         <hr>
-                        <button id="parallelogram">Try this</button>
+                        <button id="01-07">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 2d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 01">
                         <h2>Trapezoid</h2>
                         <hr>
                         <p>Calculate circuit and area of Trapezoid</p>
-                        <img src="img/shapes/trapezoid.png">
+                        <img src="img/shapes/01-08.png">
                         <hr>
-                        <button id="trapezoid">Try this</button>
+                        <button id="01-08">Try this</button>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid" id="3dshape-selected" style="display: none;">
+            <div class="container-fluid" id="02" style="display: none;">
                 <div class="row justify-content-around">
-                    <div class="col-sm-12 col-md-6 col-lg-3 3d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 02">
                         <h2>Cube</h2>
                         <hr>
                         <p>Calculate surface and volume of Cube</p>
-                        <img src="img/shapes/cube.png">
+                        <img src="img/shapes/02-01.png">
                         <hr>
-                        <button id="cube">Try this</button>
+                        <button id="02-01">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 3d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 02">
                         <h2>Cuboid</h2>
                         <hr>
                         <p>Calculate surface and volume of Cuboid</p>
-                        <img src="img/shapes/cuboid.png">
+                        <img src="img/shapes/02-02.png">
                         <hr>
-                        <button id="cuboid">Try this</button>
+                        <button id="02-02">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 3d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 02">
                         <h2>Prism</h2>
                         <hr>
                         <p>Calculate surface and volume of Prism</p>
-                        <img src="img/shapes/prism.png">
+                        <img src="img/shapes/02-03.png">
                         <hr>
-                        <button id="prism">Try this</button>
+                        <button id="02-03">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 3d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 02">
                         <h2>Sphere</h2>
                         <hr>
                         <p>Calculate surface and volume of Sphere</p>
-                        <img src="img/shapes/sphere.png">
+                        <img src="img/shapes/02-04.png">
                         <hr>
-                        <button id="sphere">Try this</button>
+                        <button id="02-04">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 3d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 02">
                         <h2>Cylinder</h2>
                         <hr>
                         <p>Calculate surface and volume of Cylinder</p>
-                        <img src="img/shapes/cylinder.png">
+                        <img src="img/shapes/02-05.png">
                         <hr>
-                        <button id="cylinder">Try this</button>
+                        <button id="02-05">Try this</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 3d">
+                    <div class="col-sm-12 col-md-6 col-lg-3 02">
                         <h2>Torus</h2>
                         <hr>
                         <p>Calculate surface and volume of Torus</p>
-                        <img src="img/shapes/torus.png">
+                        <img src="img/shapes/02-06.png">
                         <hr>
-                        <button id="torus">Try this</button>
+                        <button id="02-06">Try this</button>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid" id="units-selected" style="display: none;">
+
+
+
+            <!--<div class="container-fluid" id="units-selected" style="display: none;">
                 <div class="row justify-content-around">
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                        <h2>Square</h2>
+                        <h2>Length</h2>
                         <hr>
-                        <p>Calculate circuit and area of Square</p>
-                        <img src="img/shapes/square.png">
+                        <p>Convert units of length</p>
+                        <img src="img/convert/length.png">
+                        <hr>
+                        <button>Try this</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <h2>Weight</h2>
+                        <hr>
+                        <p>Convert units of weight</p>
+                        <img src="img/convert/weight.png">
+                        <hr>
+                        <button>Try this</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <h2>Temerature</h2>
+                        <hr>
+                        <p>Convert units of temperature</p>
+                        <img src="img/convert/temperature.png">
+                        <hr>
+                        <button>Try this</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <h2>Currency</h2>
+                        <hr>
+                        <p>Convert currency</p>
+                        <img src="img/convert/currency.png">
                         <hr>
                         <button>Try this</button>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </main>
     <footer>
@@ -273,6 +322,7 @@
     </script>
     <script src="js/script.js"></script>
     <script src="js/selection.js"></script>
+    <script src="js/calculator.js"></script>
     <script src="js/select2d.js"></script>
     <script src="js/select3d.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

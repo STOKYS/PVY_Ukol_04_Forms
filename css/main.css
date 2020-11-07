@@ -86,3 +86,11 @@ img {
     height: 599px;
     background-color: rgb(55, 55, 55);
 }
+
+.results{
+    font-size: 40px;
+}
+
+label{
+    margin: 8px 0px 0px 0px !important;
+}
