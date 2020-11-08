@@ -1,12 +1,11 @@
-const circ = document.getElementById("4-01-01")
-const area = document.getElementById("4-01-02")
+const circ = document.getElementById("3-01-01")
+const area = document.getElementById("3-01-02")
 
 $('.01>button').on('click', function () {
     selected = this.id
-    document.getElementById("preview").src = "img/shapes/" + this.id + ".png"
-    for (i = 1; i < 5; i++) {
+    document.getElementById("1-01-01").src = "img/shapes/" + this.id + ".png"
+    for (i = 1; i < 9; i++) {
         document.getElementById("2-01-0" + i).disabled = true
-        document.getElementById("3-01-0" + i).disabled = true
     }
     if (this.id == "01-01") {
         document.getElementById("2-01-01").disabled = false
@@ -17,26 +16,26 @@ $('.01>button').on('click', function () {
         document.getElementById("2-01-01").disabled = false
         document.getElementById("2-01-02").disabled = false
         document.getElementById("2-01-03").disabled = false
-        document.getElementById("3-01-01").disabled = false
+        document.getElementById("2-01-05").disabled = false
     } else if (this.id == "01-04") {
-        document.getElementById("3-01-02").disabled = false
+        document.getElementById("2-01-06").disabled = false
     } else if (this.id == "01-05") {
-        document.getElementById("3-01-02").disabled = false
-        document.getElementById("3-01-03").disabled = false
+        document.getElementById("2-01-06").disabled = false
+        document.getElementById("2-01-07").disabled = false
     } else if (this.id == "01-06") {
         document.getElementById("2-01-01").disabled = false
-        document.getElementById("3-01-04").disabled = false
-        document.getElementById("3-01-01").disabled = false
+        document.getElementById("2-01-05").disabled = false
+        document.getElementById("2-01-08").disabled = false
     } else if (this.id == "01-07") {
         document.getElementById("2-01-01").disabled = false
         document.getElementById("2-01-02").disabled = false
-        document.getElementById("3-01-01").disabled = false
+        document.getElementById("2-01-05").disabled = false
     } else if (this.id == "01-08") {
         document.getElementById("2-01-01").disabled = false
         document.getElementById("2-01-02").disabled = false
         document.getElementById("2-01-03").disabled = false
         document.getElementById("2-01-04").disabled = false
-        document.getElementById("3-01-01").disabled = false
+        document.getElementById("2-01-05").disabled = false
     }
     circ.innerText = "Circumference: x"
     area.innerText = "Area: x"

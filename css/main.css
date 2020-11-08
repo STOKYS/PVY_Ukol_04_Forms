@@ -77,20 +77,73 @@ img {
     width: 300px;
 }
 
-
 .selection {
     padding-top: 50px;
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
-    height: 599px;
+    height: 563px;
     background-color: rgb(55, 55, 55);
 }
 
-.results{
+.results {
+    text-align: center;
+    padding-top: 90px;
     font-size: 40px;
 }
 
-label{
+label {
     margin: 8px 0px 0px 0px !important;
+}
+
+.graph {
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(255, 141, 0, 1) 0%, rgba(255, 141, 0, 1) 17%, rgba(9, 121, 9, 1) 19.44444%, rgba(9, 121, 9, 1) 55.55555%, rgba(255, 141, 0, 1) 57%, rgba(255, 141, 0, 1) 83.333%, rgba(255, 0, 0, 1) 100%);
+}
+
+.col-lg-4 {
+    height: 420px;
+}
+
+.radio {
+    float: left;
+    width: 50%;
+}
+
+.radio-group {
+    width: 100%;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.radio-group-small {
+    width: 50%;
+    float: left;
+}
+
+input[type=range] {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.forms {
+    padding-top: 20px;
+}
+
+.idk {
+    height: 200px;
+}
+
+#pointer {
+    position: static;
+}
+
+#pointer>div {
+    width: 3px;
+    height: 20px;
+    background-color: black;
 }
