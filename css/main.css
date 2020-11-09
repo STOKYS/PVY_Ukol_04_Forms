@@ -97,9 +97,11 @@ label {
 }
 
 .graph {
+    margin: auto;
+    width: 80%;
     border: 2px solid black;
-    border-radius: 8px;
-    height: 50px;
+    border-radius: 5px;
+    height: 25px;
     background: linear-gradient(90deg, rgba(255, 141, 0, 1) 0%, rgba(255, 141, 0, 1) 17%, rgba(9, 121, 9, 1) 19.44444%, rgba(9, 121, 9, 1) 55.55555%, rgba(255, 141, 0, 1) 57%, rgba(255, 141, 0, 1) 83.333%, rgba(255, 0, 0, 1) 100%);
 }
 
@@ -136,10 +138,12 @@ input[type=range] {
 
 .idk {
     height: 200px;
+    padding: 20px;
 }
 
 #pointer {
-    position: static;
+    width: 80%;
+    margin: auto;
 }
 
 #pointer>div {

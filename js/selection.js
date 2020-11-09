@@ -1,23 +1,21 @@
 $('#select-button>button').on('click', function () {
-    console.log(this.id)
-    let btnid = this.id.substring(0, 2);
-    console.log(btnid)
+    let btnid = this.id.substring(4, 6);
     for (i = 1; i < 99; i++){
-        if (document.getElementById("0" + i) == null){
+        if (document.getElementById("new-0" + i) == null){
             break;
         }
         if (("0" + i) == btnid){
-            document.getElementById(btnid).style.display = "inline"
-            document.getElementById("1-" + btnid).style.display = "block"
-            document.getElementById("2-" + btnid).style.display = "flex"
-            document.getElementById("3-" + btnid).style.display = "block"   
+            document.getElementById("new-" + btnid).style.display = "inline"
+            document.getElementById("new-1-" + btnid).style.display = "block"
+            document.getElementById("new-2-" + btnid).style.display = "flex"
+            document.getElementById("new-3-" + btnid).style.display = "block"   
             document.getElementById(this.id).disabled = true
         } else {
-            document.getElementById("0" + i).style.display = "none"
-            document.getElementById("1-" + "0" + i).style.display = "none"
-            document.getElementById("2-" + "0" + i).style.display = "none"
-            document.getElementById("3-" + "0" + i).style.display = "none"
-            document.getElementById("0" + i + "-button").disabled = false
+            document.getElementById("new-0" + i).style.display = "none"
+            document.getElementById("new-1-" + "0" + i).style.display = "none"
+            document.getElementById("new-2-" + "0" + i).style.display = "none"
+            document.getElementById("new-3-" + "0" + i).style.display = "none"
+            document.getElementById("new-0" + i + "-button").disabled = false
         }
     }
 })
