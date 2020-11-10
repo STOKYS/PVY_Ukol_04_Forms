@@ -1,6 +1,3 @@
-const surf = document.getElementById("new-3-02-01")
-const volu = document.getElementById("new-3-02-02")
-
 $('.new-02>button').on('click', function () {
     selected = this.id
     document.getElementById("new-1-02-01").src = "img/shapes/" + (this.id).slice(-5) + ".png"
@@ -33,14 +30,14 @@ $('.new-02>button').on('click', function () {
 
 function shapeData3d() {
     let shape = {
-        a: document.getElementById("new-2-02-01").value,
-        b: document.getElementById("new-2-02-02").value,
-        c: document.getElementById("new-2-02-03").value,
-        n: document.getElementById("new-2-02-04").value,
-        r: document.getElementById("new-2-02-05").value,
-        R: document.getElementById("new-2-02-06").value,
-        h: document.getElementById("new-2-02-07").value,
-        ha: document.getElementById("new-2-02-08").value
+        a: parseFloat(document.getElementById("new-2-02-01").value),
+        b: parseFloat(document.getElementById("new-2-02-02").value),
+        c: parseFloat(document.getElementById("new-2-02-03").value),
+        n: parseFloat(document.getElementById("new-2-02-04").value),
+        r: parseFloat(document.getElementById("new-2-02-05").value),
+        R: parseFloat(document.getElementById("new-2-02-06").value),
+        h: parseFloat(document.getElementById("new-2-02-07").value),
+        ha: parseFloat(document.getElementById("new-2-02-08").value)
     }
     return shapeCalculate3d(shape)
 }

@@ -1,6 +1,3 @@
-const circ = document.getElementById("new-3-01-01")
-const area = document.getElementById("new-3-01-02")
-
 $('.new-01>button').on('click', function () {
     selected = this.id
     document.getElementById("new-1-01-01").src = "img/shapes/" + (this.id).slice(-5) + ".png"
@@ -43,14 +40,14 @@ $('.new-01>button').on('click', function () {
 
 function shapeData(){
     let shape = {
-        a: document.getElementById("new-2-01-01").value,
-        b: document.getElementById("new-2-01-02").value,
-        c: document.getElementById("new-2-01-03").value,
-        d: document.getElementById("new-2-01-04").value,
-        h: document.getElementById("new-2-01-05").value,
-        ra: document.getElementById("new-2-01-06").value,
-        rb: document.getElementById("new-2-01-07").value,
-        n: document.getElementById("new-2-01-08").value
+        a: parseFloat(document.getElementById("new-2-01-01").value),
+        b: parseFloat(document.getElementById("new-2-01-02").value),
+        c: parseFloat(document.getElementById("new-2-01-03").value),
+        d: parseFloat(document.getElementById("new-2-01-04").value),
+        h: parseFloat(document.getElementById("new-2-01-05").value),
+        ra: parseFloat(document.getElementById("new-2-01-06").value),
+        rb: parseFloat(document.getElementById("new-2-01-07").value),
+        n: parseFloat(document.getElementById("new-2-01-08").value)
     }
     return shapeCalculate(shape)
 }
@@ -58,11 +55,11 @@ function shapeData(){
 function shapeCalculate(object){
     if (selected == "new-01-01") return [(4 * object.a), (Math.pow(object.a, 2))]
     else if (selected == "new-01-02") return [(2 * (object.a + object.b)), (object.a * object.b)]
-    else if (selected == "new-01-03") return [(object.a + object.b + object.c),(object.a * object.h / 2)]
-    else if (selected == "new-01-04") return [(2 * Math.PI * object.ra),(Math.PI * Math.pow(object.ra, 2))]
+    else if (selected == "new-01-03") return [(object.a + object.b + object.c), (object.a * object.h / 2)]
+    else if (selected == "new-01-04") return [(2 * Math.PI * object.ra), (Math.PI * Math.pow(object.ra, 2))]
     else if (selected == "new-01-05") return ["Can\'t be calculated", (Math.PI * object.ra * object.rb)]
     else if (selected == "new-01-06") return [(object.n * object.a), ((object.n / 2) * object.a * object.h)]
-    else if (selected == "new-01-07") return [(2 * (object.a + object.b)),(object.a * object.h)]
+    else if (selected == "new-01-07") return [(2 * (object.a + object.b)), (object.a * object.h)]
     else if (selected == "new-01-08") return [(object.a + object.b + object.c + object.d), (((object.a + object.b) / 2) * object.h)]
 }
 

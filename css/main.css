@@ -62,7 +62,7 @@ img {
     background-color: rgb(200, 200, 200);
     border: 1px solid grey;
     padding: 20px;
-    font-size: large;
+    font-size: 16px;
     border-radius: 20px 10px 0px 0px;
     box-shadow: 10px 10px 5px grey;
     outline: none;
@@ -82,8 +82,9 @@ img {
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
-    height: 563px;
+    height: 461px;
     background-color: rgb(55, 55, 55);
+    width: 100%;
 }
 
 .results {
@@ -93,7 +94,8 @@ img {
 }
 
 label {
-    margin: 8px 0px 0px 0px !important;
+    margin-top: 8px !important;
+    padding-left: 10px;
 }
 
 .graph {
@@ -102,7 +104,7 @@ label {
     border: 2px solid black;
     border-radius: 5px;
     height: 25px;
-    background: linear-gradient(90deg, rgba(255, 141, 0, 1) 0%, rgba(255, 141, 0, 1) 17%, rgba(9, 121, 9, 1) 19.44444%, rgba(9, 121, 9, 1) 55.55555%, rgba(255, 141, 0, 1) 57%, rgba(255, 141, 0, 1) 83.333%, rgba(255, 0, 0, 1) 100%);
+    background: linear-gradient(90deg, rgba(255,38,0,1) 0%, rgba(255,141,0,1) 17%, rgba(9,121,9,1) 19.44444%, rgba(9,121,9,1) 55.55555%, rgba(255,141,0,1) 57%, rgba(255,141,0,1) 83.333%, rgba(255,0,0,1) 100%);
 }
 
 .col-lg-4 {
